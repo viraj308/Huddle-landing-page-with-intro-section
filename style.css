@@ -25,12 +25,13 @@ body {
 .container {
     width: 80%;
     max-width: 340px;
+    min-width: 250px;
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 3em 0;
 }
 .heading {
     font-size: 1.625rem;
-    padding-bottom: 0.7em;
+    margin-bottom: 0.7em;
     text-align: center;
 }
 .text {
@@ -48,6 +49,10 @@ body {
     border-radius: 30px;
     margin-left: auoto;
 }
+.button:hover {
+    background-color: var(--softMagenta);
+    color: white;
+}
 .logo_img {
     width: 135px;
     margin-bottom: 3.4em;
@@ -60,12 +65,74 @@ body {
 }
 .footer_icons {
     display: flex;
-    width: 120px;
+    width: 130px;
     justify-content: space-between;
     margin: 4.2em auto 0 auto;
 }
-i {
-    border: 1px solid rgb(208, 197, 197);
-    padding: 0.4em;
-    border-radius: 500%;
+.footer_icons a {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 4px 9px;
+    border-radius: 50%;
+}
+.footer_icons a:hover {
+    color: var(--softMagenta);
+    border-color: var(--softMagenta);
+}
+.footer_icons .facebook {
+    padding: 4px 12px;
+}
+@media (min-width: 750px) {
+    .container {
+        width: 88%;
+        max-width: 1000px;
+    }
+    .heading {
+        text-align: start;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content2 {
+        max-width: 370px;
+        width: 45%;
+    }
+    .img {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .footer_icons {
+        margin: 2em 3em 0 auto;
+    }
+    .text {
+        text-align: start;
+    }
+    .btn {
+        text-align: start;
+    }
+}
+@media (min-width: 1050px) {
+    html {
+        font-size: 1.1rem;
+    }
+    .container {
+        max-width: 1300px;
+    }
+    .heading {
+        font-size: 2.1rem;
+    }
+    .content2 {
+        max-width: 550px;
+        margin-top: 2em;
+        
+    }
+  
+    .button {
+        padding: 0.9em 3.5em;
+    }
+    .logo_img {
+        width: 220px;
+    }
 }
